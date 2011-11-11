@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * AuditTrailModule class file.
+ * 
+ * AuditTrail allows logging of audit trails automatically. The core functionality is in LoggableBehavior, but
+ * by creating a wrapper module, we can make a centralized place to monitor the auditTrail as well as allow
+ * configuration values to be contained in our main config file.
+ *
+ * @author Corey Tisdale <corey[at]eyewantmedia[dot]com>
+ * @link http://www.yiiframework.com/extension/audittrail/
+ * @copyright Copyright &copy; 2010-2011 Eye Want Media, LLC
+ * @package auditTrail
+ */
+
 class AuditTrailModule extends CWebModule
 {
 	/**

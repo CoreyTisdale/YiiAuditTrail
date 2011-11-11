@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * m110517_155003_create_tables_audit_trail class file.
+ * 
+ * This migration sets up your database for the auditTrail module
+ *
+ * @author Corey Tisdale <corey[at]eyewantmedia[dot]com>
+ * @link http://www.yiiframework.com/extension/audittrail/
+ * @copyright Copyright &copy; 2010-2011 Eye Want Media, LLC
+ * @package auditTrail
+ */
+ 
 class m110517_155003_create_tables_audit_trail extends CDbMigration
 {
 

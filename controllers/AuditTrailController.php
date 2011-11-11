@@ -1,9 +1,19 @@
 <?php
+
 /**
- * Controller is the customized base controller class.
- * All controller classes for this module should extend from this base class.
+ * AuditTrailController class file.
+ * 
+ * All controller classes for this module should extend from this base class. This class inherits from Controller,
+ * the default class created by the Yiic scaffolding. This is so any RBAC or other access control you have in place
+ * will automatically work with this module
+ *
+ * @author Corey Tisdale <corey[at]eyewantmedia[dot]com>
+ * @link http://www.yiiframework.com/extension/audittrail/
+ * @copyright Copyright &copy; 2010-2011 Eye Want Media, LLC
+ * @package auditTrail
  */
-class AuditTrailController extends CController
+ 
+class AuditTrailController extends Controller
 {
 	/**
 	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',
