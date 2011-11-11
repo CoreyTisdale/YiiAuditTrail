@@ -1,6 +1,15 @@
 <?php
 /**
- * ShowAuditTrail shows the audit trail for the current item
+ * ShowAuditTrail class file.
+ * 
+ * ShowAuditTrail shows the audit trail for the current item. It
+ * is configurable via the main config file to (hopefully)
+ * suit your needs
+ *
+ * @author Corey Tisdale <corey[at]eyewantmedia[dot]com>
+ * @link http://www.yiiframework.com/extension/audittrail/
+ * @copyright Copyright &copy; 2010-2011 Eye Want Media, LLC
+ * @package auditTrail
  */
 
 Yii::import('zii.widgets.CPortlet');
