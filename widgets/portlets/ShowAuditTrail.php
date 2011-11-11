@@ -19,7 +19,7 @@ class ShowAuditTrail extends CPortlet
 {
 	/**
 	 * @var CActiveRecord the model you want to use with this field
-	 */
+	 */ 
 	public $model;
 
 	/**

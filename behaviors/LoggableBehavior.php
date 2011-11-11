@@ -14,7 +14,7 @@
  * CONTRIBUTIONS
  * The original article was written by yiiframework.com user pfth. yiiframework.com forum user 'Van Damm' has also
  * contributed a very large code refactoring as well as recommendations for improvement.
- *
+ * 
  * @author Corey Tisdale <corey[at]eyewantmedia[dot]com>
  * @link http://www.yiiframework.com/extension/audittrail/
  * @copyright Copyright &copy; 2010-2011 Eye Want Media, LLC

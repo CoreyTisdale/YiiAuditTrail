@@ -15,7 +15,7 @@ class m110517_155003_create_tables_audit_trail extends CDbMigration
 {
 
 	/**
-	 * Creates initial version of the audit trail table
+	 * Creates initial version of the audit trail table 
 	 */
 	public function up()
 	{

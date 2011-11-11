@@ -32,7 +32,7 @@ class AuditTrailModule extends CWebModule
 	
 	/**
 	 * @var AuditTrailModule static variable to hold the module so we don't have to instantiate it a million times to get config values
-	 */
+	 */ 
 	private static $__auditTrailModule;
 
 	public function init()
