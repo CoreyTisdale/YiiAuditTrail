@@ -1,6 +1,29 @@
 <?php
+
+/**
+ * LoggableBehavior class file.
+ * 
+ * LoggableBehavior allows logging of audit trails automatically
+ *
+ * This class was adapted from a Yii Wiki article on leaving an audit trail
+ * the {@link http://www.yiiframework.com/wiki/9/how-to-log-changes-of-activerecords How To Log Changes of Active Records}.
+ *
+ * The idea is that we can tie into events raised by CActiveRecord to automatically record the creation,
+ * modification, and deletion of our models.
+ *
+ * CONTRIBUTIONS
+ * The original article was written by yiiframework.com user pfth. yiiframework.com forum user 'Van Damm' has also
+ * contributed a very large code refactoring as well as recommendations for improvement.
+ *
+ * @author Corey Tisdale <corey[at]eyewantmedia[dot]com>
+ * @link http://www.yiiframework.com/extension/audittrail/
+ * @copyright Copyright &copy; 2010-2011 Eye Want Media, LLC
+ * @package auditTrail
+ */
+
 class LoggableBehavior extends CActiveRecordBehavior
 {
+
 	private $_oldattributes = array();
 
 	public function afterSave($event)
@@ -129,5 +152,19 @@ class LoggableBehavior extends CActiveRecordBehavior
 	{
 		$this->_oldattributes=$value;
 	}
+	
+	
+	/**
+	* @return string Table's primary key as plain string.
+	* Encodes complex keys using JSON.
+	*/
+	protected function getNormalizedPk()
+	{
+		$pk = $this->getOwner()->getPrimaryKey();
+		return is_array($pk) ? json_encode($pk) : $pk;
+	}
+
+	
+	
 }
 ?>
